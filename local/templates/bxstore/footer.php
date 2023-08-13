@@ -10,20 +10,14 @@
       </div>
       <div class="footer_stat">
             <?php // Таблица статистики - http://dev.1c-bitrix.ru/user_help/statistic/components_2/statistic_table.php
-            $APPLICATION->IncludeComponent(
-                  "bitrix:statistic.table",
-                  ".default",
-                  array(
-                        // region Настройки кеширования         
-                        "CACHE_TYPE"       =>  "A",   // Тип кеширования : array ( 'A' => 'Авто + Управляемое', 'Y' => 'Кешировать', 'N' => 'Не кешировать', )         
-                        "CACHE_TIME"       =>  "20",  // Время кеширования (сек.)          
-                        "CACHE_NOTES"      =>  "",    //           
-                        // endregion         
-                        // region Дополнительные настройки         
-                        "CACHE_FOR_ADMIN"  =>  "N",   // Кешировать для администраторов          
-                        // endregion 
-                  )
-            ); ?>
+            $APPLICATION->IncludeComponent("bitrix:statistic.table", "statistic", Array(
+	"CACHE_TYPE" => "A",	// Тип кеширования
+		"CACHE_TIME" => "20",	// Время кеширования (сек.)
+		"CACHE_NOTES" => "",
+		"CACHE_FOR_ADMIN" => "N",	// Кешировать для администраторов
+	),
+	false
+); ?>
             <a data-fancybox data-type="ajax" data-filter="#conf" data-src="/confidencial/index.php" href="javascript:;">Политика конфиденциальности</a>
             <a href="#">Создание сайтов на Bitrix</a>
       </div>
