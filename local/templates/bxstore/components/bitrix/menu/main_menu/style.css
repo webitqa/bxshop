@@ -1,0 +1,16 @@
+.main_menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .main_menu li {
+    display: inline-block;
+  }
+  .main_menu a {
+    color: var(--color3);
+    font-size: 18px;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-style: normal;
+  }/*# sourceMappingURL=style.css.map */
