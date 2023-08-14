@@ -40,7 +40,7 @@ $CurUri = $APPLICATION->GetCurUri();
             </div>
             <div class="header_content">
                 <div class="row">
-                    <span>Вязаные игрушки <i>ручной работы<i></span>
+                    <span>Плюшевые игрушки <i>ручной работы<i></span>
                 </div>
                 <div class="row">
 
